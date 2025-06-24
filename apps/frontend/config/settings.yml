@@ -1,0 +1,65 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+prod:
+  .settings:
+    no_script_name:         true
+    logging_enabled:        false
+
+dev:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  true
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+
+cache:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  true
+    etag:                   false
+
+
+all:
+  .settings:
+    charset: utf-8
+    i18n: true
+
+    # Activar modulos del sfJobeetApi
+    enabled_modules:
+     - default
+     - sfJobeetAffiliate
+     - sfJobeetCategory
+     - sfJobeetJob
+     - sfJobeetLanguage
+     - sfJobeetApi
+
+
+
+    standard_helpers: [Partial, Cache, I18N]
+    default_culture: it_IT
+    # Form security secret (CSRF protection)
+    csrf_secret:            a876f6a56d8ae4d317567762d4ea5a014144b4e2
+
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+    # Enable the database manager
+    use_database:           true
+
+    error_404_module:     default
+    error_404_action:     error404
+    error_500_module:     default
+    error_500_action:     error500
+  

@@ -1,0 +1,4 @@
+echo "/cache/" >> .gitignore
+echo "/log/" >> .gitignore
+echo "/web/uploads/" >> .gitignore
+

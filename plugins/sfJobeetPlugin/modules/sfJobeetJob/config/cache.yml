@@ -1,0 +1,10 @@
+
+new:
+  enabled: true
+
+index:
+  enabled: true
+  lifetime: 300
+
+all:
+  with_layout: false

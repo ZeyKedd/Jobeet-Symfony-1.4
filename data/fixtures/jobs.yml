@@ -1,0 +1,703 @@
+# Datos base
+# - php symfony doctrine:data-load
+
+JobeetJob:
+  job_sesion_lab:
+    JobeetCategory: programming
+    type: full-time
+    company: Sesion Labs
+    logo: sensio-labs.gif
+    url: http://www.sesionlabs.com
+    position: Web Developer
+    location: Paris, France
+    description: |
+      You've already developed websites with symfony and you want to work
+      with Open-Source technologies. You have a minimum of 3 years.
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public: true
+    is_activated: true
+    token: job_sesion_lab
+    email: job@example.com
+    expires_at: "2030-10-10"
+
+  job_extreme_sensio:
+    JobeetCategory: design
+    type: part-time
+    company: Extreme Sensio
+    logo: extreme-sensio.gif
+    url: http://www.extreme-sensio.com/
+    position: Web Designer
+    location: Paris, France
+    description: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public: true
+    is_activated: true
+    token: job_extreme_sensio
+    email: job@example.com
+    expires_at: "2025-10-10"
+
+  job_alpha_soft:
+    JobeetCategory: programming
+    type: full-time
+    company: AlphaSoft
+    logo: alphasoft.png
+    url: http://www.alphasoft.com
+    position: Backend Developer
+    location: Berlin, Germany
+    description: |
+      Build and maintain scalable backend services in Python and Go.
+    how_to_apply: |
+      Email your CV to hr [at] alphasoft.com
+    is_public: true
+    is_activated: true
+    token: job_alpha_soft
+    email: hr@alphasoft.com
+    expires_at: "2026-06-30"
+
+  job_creative_hands:
+    JobeetCategory: design
+    type: freelance
+    company: Creative Hands
+    logo: creativehands.png
+    url: http://www.creativehands.co
+    position: UI/UX Designer
+    location: Remote
+    description: |
+      Design user-friendly interfaces and conduct usability tests.
+    how_to_apply: |
+      Send your portfolio to jobs [at] creativehands.co
+    is_public: true
+    is_activated: true
+    token: job_creative_hands
+    email: jobs@creativehands.co
+    expires_at: "2026-07-15"
+
+  job_northvision:
+    JobeetCategory: manager
+    type: full-time
+    company: NorthVision
+    logo: northvision.png
+    url: http://www.northvision.com
+    position: Product Manager
+    location: Toronto, Canada
+    description: |
+      Define and manage product roadmap and feature prioritization.
+    how_to_apply: |
+      Apply at northvision.com/careers
+    is_public: true
+    is_activated: true
+    token: job_northvision
+    email: pm@northvision.com
+    expires_at: "2026-08-01"
+
+  job_byte_admin:
+    JobeetCategory: administrador
+    type: full-time
+    company: ByteCorp
+    logo: bytecorp.png
+    url: http://www.bytecorp.net
+    position: System Administrator
+    location: Lisbon, Portugal
+    description: |
+      Manage servers and ensure system uptime for global clients.
+    how_to_apply: |
+      Send resume to adminjobs [at] bytecorp.net
+    is_public: true
+    is_activated: true
+    token: job_byte_admin
+    email: adminjobs@bytecorp.net
+    expires_at: "2026-05-10"
+
+  job_dev_solutions:
+    JobeetCategory: programming
+    type: freelance
+    company: DevSolutions
+    logo: devsolutions.png
+    url: http://www.devsolutions.io
+    position: React Developer
+    location: Remote
+    description: |
+      Develop modern web apps using React and Redux.
+    how_to_apply: |
+      Email your GitHub to talent [at] devsolutions.io
+    is_public: true
+    is_activated: true
+    token: job_dev_solutions
+    email: talent@devsolutions.io
+    expires_at: "2026-07-20"
+
+  job_spark_designs:
+    JobeetCategory: design
+    type: part-time
+    company: Spark Designs
+    logo: sparkdesigns.png
+    url: http://www.sparkdesigns.com
+    position: Illustrator
+    location: Milan, Italy
+    description: |
+      Create engaging illustrations for marketing and branding.
+    how_to_apply: |
+      Send portfolio to spark [at] designs.com
+    is_public: true
+    is_activated: true
+    token: job_spark_designs
+    email: spark@designs.com
+    expires_at: "2026-09-01"
+
+  job_planet_admin:
+    JobeetCategory: administrador
+    type: full-time
+    company: PlanetHost
+    logo: planethost.png
+    url: http://www.planethost.com
+    position: Linux Administrator
+    location: Tokyo, Japan
+    description: |
+      Configure and monitor Linux servers and services.
+    how_to_apply: |
+      Apply online at planethost.com/jobs
+    is_public: true
+    is_activated: true
+    token: job_planet_admin
+    email: jobs@planethost.com
+    expires_at: "2026-10-15"
+
+  job_future_tech:
+    JobeetCategory: programming
+    type: part-time
+    company: FutureTech
+    logo: futuretech.png
+    url: http://www.futuretech.com
+    position: Java Developer
+    location: Madrid, Spain
+    description: |
+      Develop enterprise-level applications using Java and Spring Boot.
+    how_to_apply: |
+      Apply via LinkedIn or futuretech.com/jobs
+    is_public: true
+    is_activated: true
+    token: job_future_tech
+    email: jobs@futuretech.com
+    expires_at: "2026-12-31"
+
+  job_galaxy_graphics:
+    JobeetCategory: design
+    type: full-time
+    company: Galaxy Graphics
+    logo: galaxygraphics.png
+    url: http://www.galaxygraphics.net
+    position: Graphic Designer
+    location: San Francisco, USA
+    description: |
+      Work on digital marketing visuals and print design.
+    how_to_apply: |
+      Email resume and portfolio to jobs [at] galaxygraphics.net
+    is_public: true
+    is_activated: true
+    token: job_galaxy_graphics
+    email: jobs@galaxygraphics.net
+    expires_at: "2026-10-01"
+
+  job_teamcore:
+    JobeetCategory: manager
+    type: full-time
+    company: TeamCore
+    logo: teamcore.png
+    url: http://www.teamcore.com
+    position: Scrum Master
+    location: Manchester, UK
+    description: |
+      Lead agile teams and ensure smooth sprint delivery.
+    how_to_apply: |
+      Upload resume to teamcore.com/careers
+    is_public: true
+    is_activated: true
+    token: job_teamcore
+    email: hr@teamcore.com
+    expires_at: "2027-01-10"
+
+  job_cyberhouse:
+    JobeetCategory: administrador
+    type: part-time
+    company: CyberHouse
+    logo: cyberhouse.png
+    url: http://www.cyberhouse.net
+    position: IT Support Specialist
+    location: Bogotá, Colombia
+    description: |
+      Provide technical support to local and remote teams.
+    how_to_apply: |
+      Email support [at] cyberhouse.net
+    is_public: true
+    is_activated: true
+    token: job_cyberhouse
+    email: support@cyberhouse.net
+    expires_at: "2026-09-20"
+
+  job_codewave:
+    JobeetCategory: programming
+    type: freelance
+    company: CodeWave
+    logo: codewave.png
+    url: http://www.codewave.dev
+    position: Frontend Developer
+    location: Remote
+    description: |
+      Develop responsive interfaces using Vue.js and Tailwind CSS.
+    how_to_apply: |
+      Apply through codewave.dev/jobs
+    is_public: true
+    is_activated: true
+    token: job_codewave
+    email: frontend@codewave.dev
+    expires_at: "2026-07-30"
+
+  job_brainstorm:
+    JobeetCategory: design
+    type: freelance
+    company: Brainstorm Inc.
+    logo: brainstorm.png
+    url: http://www.brainstorminc.com
+    position: Motion Designer
+    location: Remote
+    description: |
+      Create animations and visual content for social media.
+    how_to_apply: |
+      Send your showreel to motion [at] brainstorminc.com
+    is_public: true
+    is_activated: true
+    token: job_brainstorm
+    email: motion@brainstorminc.com
+    expires_at: "2026-06-15"
+
+  job_topline:
+    JobeetCategory: manager
+    type: full-time
+    company: Topline Systems
+    logo: topline.png
+    url: http://www.topline.com
+    position: Technical Project Manager
+    location: Seattle, USA
+    description: |
+      Coordinate software projects and communicate with stakeholders.
+    how_to_apply: |
+      Apply at topline.com/careers
+    is_public: true
+    is_activated: true
+    token: job_topline
+    email: apply@topline.com
+    expires_at: "2026-11-01"
+
+  job_netlabs:
+    JobeetCategory: administrador
+    type: full-time
+    company: NetLabs
+    logo: netlabs.png
+    url: http://www.netlabs.com
+    position: Network Administrator
+    location: Dublin, Ireland
+    description: |
+      Maintain and troubleshoot corporate networks and firewalls.
+    how_to_apply: |
+      Send your CV to netadmin [at] netlabs.com
+    is_public: true
+    is_activated: true
+    token: job_netlabs
+    email: netadmin@netlabs.com
+    expires_at: "2026-08-08"
+
+  job_oceanweb:
+    JobeetCategory: programming
+    type: full-time
+    company: OceanWeb
+    logo: oceanweb.png
+    url: http://www.oceanweb.com
+    position: PHP Developer
+    location: Buenos Aires, Argentina
+    description: |
+      Maintain and build PHP-based websites and applications.
+    how_to_apply: |
+      Apply through oceanweb.com/jobs
+    is_public: true
+    is_activated: true
+    token: job_oceanweb
+    email: php@oceanweb.com
+    expires_at: "2026-09-12"
+
+  job_digitalroots:
+    JobeetCategory: design
+    type: part-time
+    company: Digital Roots
+    logo: digitalroots.png
+    url: http://www.digitalroots.com
+    position: Web Designer
+    location: Barcelona, Spain
+    description: |
+      Design clean, mobile-first web interfaces.
+    how_to_apply: |
+      Portfolio to design [at] digitalroots.com
+    is_public: true
+    is_activated: true
+    token: job_digitalroots
+    email: design@digitalroots.com
+    expires_at: "2026-10-05"
+
+  job_zenapps:
+    JobeetCategory: programming
+    type: full-time
+    company: ZenApps
+    logo: zenapps.png
+    url: http://www.zenapps.io
+    position: Mobile Developer
+    location: New York, USA
+    description: |
+      Build Android and iOS apps using Flutter.
+    how_to_apply: |
+      Send resume to careers [at] zenapps.io
+    is_public: true
+    is_activated: true
+    token: job_zenapps
+    email: careers@zenapps.io
+    expires_at: "2026-11-30"
+
+  job_pixel_factory:
+    JobeetCategory: design
+    type: full-time
+    company: Pixel Factory
+    logo: pixel-factory.png
+    url: http://www.pixelfactory.com
+    position: UI/UX Designer
+    location: Berlin, Germany
+    description: |
+      Join our team to create stunning interfaces for web and mobile platforms.
+    how_to_apply: |
+      Send your portfolio to hr@pixelfactory.com
+    is_public: true
+    is_activated: true
+    token: job_pixel_factory
+    email: hr@pixelfactory.com
+    expires_at: "2026-12-01"
+
+  job_creative_beans:
+    JobeetCategory: design
+    type: part-time
+    company: Creative Beans
+    logo: creative-beans.png
+    url: http://www.creativebeans.com
+    position: Junior Graphic Designer
+    location: Medellín, Colombia
+    description: |
+      Support the creative team with layout, branding and social content.
+    how_to_apply: |
+      Apply at creativebeans.com/jobs
+    is_public: true
+    is_activated: true
+    token: job_creative_beans
+    email: contact@creativebeans.com
+    expires_at: "2026-10-20"
+
+  job_nova_visuals:
+    JobeetCategory: design
+    type: freelance
+    company: Nova Visuals
+    logo: nova-visuals.png
+    url: http://www.novavisuals.io
+    position: Visual Designer
+    location: Remote
+    description: |
+      Create eye-catching assets for marketing campaigns and branding.
+    how_to_apply: |
+      Send your Behance or Dribbble link to design@novavisuals.io
+    is_public: true
+    is_activated: true
+    token: job_nova_visuals
+    email: design@novavisuals.io
+    expires_at: "2026-11-15"
+
+  job_sparkstudio:
+    JobeetCategory: design
+    type: full-time
+    company: Spark Studio
+    logo: spark-studio.png
+    url: http://www.sparkstudio.com
+    position: Senior Product Designer
+    location: Toronto, Canada
+    description: |
+      Lead design systems, prototyping and usability testing for SaaS tools.
+    how_to_apply: |
+      Submit resume and portfolio to sparkstudio.com/careers
+    is_public: true
+    is_activated: true
+    token: job_sparkstudio
+    email: apply@sparkstudio.com
+    expires_at: "2026-08-31"
+
+  job_artify:
+    JobeetCategory: design
+    type: part-time
+    company: Artify
+    logo: artify.png
+    url: http://www.artify.co
+    position: Illustrator
+    location: Lima, Peru
+    description: |
+      Work with a team of artists to illustrate characters and environments.
+    how_to_apply: |
+      Email your best work to contact@artify.co
+    is_public: true
+    is_activated: true
+    token: job_artify
+    email: contact@artify.co
+    expires_at: "2026-09-25"
+
+  job_inkdrop:
+    JobeetCategory: design
+    type: freelance
+    company: Inkdrop
+    logo: inkdrop.png
+    url: http://www.inkdrop.studio
+    position: Brand Designer
+    location: Remote
+    description: |
+      Help our clients define their brand identity from concept to execution.
+    how_to_apply: |
+      Send case studies to work@inkdrop.studio
+    is_public: true
+    is_activated: true
+    token: job_inkdrop
+    email: work@inkdrop.studio
+    expires_at: "2026-12-15"
+
+  job_codeworks:
+    JobeetCategory: programming
+    type: full-time
+    company: CodeWorks
+    logo: codeworks.png
+    url: http://www.codeworks.io
+    position: Backend Developer
+    location: Bogotá, Colombia
+    description: |
+      We are looking for a PHP/Laravel developer with experience in REST APIs and SQL.
+    how_to_apply: |
+      Email your CV to dev@codeworks.io
+    is_public: true
+    is_activated: true
+    token: job_codeworks
+    email: dev@codeworks.io
+    expires_at: "2026-11-30"
+
+  job_bitstack:
+    JobeetCategory: programming
+    type: part-time
+    company: BitStack
+    logo: bitstack.png
+    url: http://www.bitstack.dev
+    position: Junior Full Stack Developer
+    location: Remote
+    description: |
+      Join a startup and build exciting features using React and Node.js.
+    how_to_apply: |
+      Apply at bitstack.dev/careers
+    is_public: true
+    is_activated: true
+    token: job_bitstack
+    email: contact@bitstack.dev
+    expires_at: "2026-09-01"
+
+  job_appland:
+    JobeetCategory: programming
+    type: full-time
+    company: Appland
+    logo: appland.png
+    url: http://www.appland.com
+    position: iOS Developer
+    location: Madrid, Spain
+    description: |
+      Looking for an experienced Swift developer for enterprise mobile apps.
+    how_to_apply: |
+      Send GitHub and CV to jobs@appland.com
+    is_public: true
+    is_activated: true
+    token: job_appland
+    email: jobs@appland.com
+    expires_at: "2026-10-10"
+
+  job_devprime:
+    JobeetCategory: programming
+    type: freelance
+    company: DevPrime
+    logo: devprime.png
+    url: http://www.devprime.co
+    position: Python Developer
+    location: Remote
+    description: |
+      Build internal tools and data scripts using Python and Django.
+    how_to_apply: |
+      Contact us via jobs@devprime.co
+    is_public: true
+    is_activated: true
+    token: job_devprime
+    email: jobs@devprime.co
+    expires_at: "2026-12-01"
+
+  job_lumosoft:
+    JobeetCategory: programming
+    type: full-time
+    company: Lumosoft
+    logo: lumosoft.png
+    url: http://www.lumosoft.com
+    position: Java Developer
+    location: Lima, Peru
+    description: |
+      Develop banking software in Java Spring Boot and microservices.
+    how_to_apply: |
+      Upload your resume at lumosoft.com/careers
+    is_public: true
+    is_activated: true
+    token: job_lumosoft
+    email: hr@lumosoft.com
+    expires_at: "2026-11-01"
+
+  job_softtree:
+    JobeetCategory: programming
+    type: full-time
+    company: SoftTree
+    logo: softtree.png
+    url: http://www.softtree.tech
+    position: Frontend Developer
+    location: Buenos Aires, Argentina
+    description: |
+      React, Vue.js, TypeScript — build UIs for fintech apps.
+    how_to_apply: |
+      Send us your GitHub and CV at softtree.tech/jobs
+    is_public: true
+    is_activated: true
+    token: job_softtree
+    email: hr@softtree.tech
+    expires_at: "2026-09-15"
+
+  job_neuronet:
+    JobeetCategory: programming
+    type: part-time
+    company: NeuroNet AI
+    logo: neuronet.png
+    url: http://www.neuronet.ai
+    position: Machine Learning Engineer
+    location: Remote
+    description: |
+      Work on computer vision models using TensorFlow and PyTorch.
+    how_to_apply: |
+      Apply via careers@neuronet.ai
+    is_public: true
+    is_activated: true
+    token: job_neuronet
+    email: careers@neuronet.ai
+    expires_at: "2026-08-28"
+
+  job_cyberwave:
+    JobeetCategory: programming
+    type: freelance
+    company: CyberWave
+    logo: cyberwave.png
+    url: http://www.cyberwave.io
+    position: DevOps Engineer
+    location: Remote
+    description: |
+      Automate deployment pipelines with Docker, Jenkins, and AWS.
+    how_to_apply: |
+      Send your LinkedIn profile to devops@cyberwave.io
+    is_public: true
+    is_activated: true
+    token: job_cyberwave
+    email: devops@cyberwave.io
+    expires_at: "2026-10-20"
+
+  job_stackpilot:
+    JobeetCategory: programming
+    type: full-time
+    company: StackPilot
+    logo: stackpilot.png
+    url: http://www.stackpilot.com
+    position: Full Stack Engineer
+    location: México City, México
+    description: |
+      Node.js, PostgreSQL, AWS — build core platform APIs and services.
+    how_to_apply: |
+      Apply on stackpilot.com/jobs
+    is_public: true
+    is_activated: true
+    token: job_stackpilot
+    email: jobs@stackpilot.com
+    expires_at: "2026-12-10"
+
+  job_zenware:
+    JobeetCategory: programming
+    type: full-time
+    company: Zenware
+    logo: zenware.png
+    url: http://www.zenware.co
+    position: .NET Developer
+    location: Quito, Ecuador
+    description: |
+      Join our team and build enterprise applications with .NET and C#.
+    how_to_apply: |
+      Email your CV to hr@zenware.co
+    is_public: true
+    is_activated: true
+    token: job_zenware
+    email: hr@zenware.co
+    expires_at: "2026-11-22"
+
+  job_scriptify:
+    JobeetCategory: programming
+    type: part-time
+    company: Scriptify
+    logo: scriptify.png
+    url: http://www.scriptify.com
+    position: JavaScript Developer
+    location: Remote
+    description: |
+      Build internal dashboards and tools using Vue.js and Node.
+    how_to_apply: |
+      Apply at careers@scriptify.com
+    is_public: true
+    is_activated: true
+    token: job_scriptify
+    email: careers@scriptify.com
+    expires_at: "2026-10-01"
+
+  job_openlogic:
+    JobeetCategory: programming
+    type: full-time
+    company: OpenLogic
+    logo: openlogic.png
+    url: http://www.openlogic.org
+    position: Open Source Contributor
+    location: Remote
+    description: |
+      Contribute to major open source projects in Linux and system tools.
+    how_to_apply: |
+      Send patches or portfolio to opensource@openlogic.org
+    is_public: true
+    is_activated: true
+    token: job_openlogic
+    email: opensource@openlogic.org
+    expires_at: "2026-09-10"
+
+  expired_job:
+    JobeetCategory: programming
+    company: Sensio Labs
+    position: Web Developer
+    location: Paris, France
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    how_to_apply: Send your resume to lorem.ipsum [at] dolor.sit
+    is_public: true
+    is_activated: true
+    created_at: "2005-12-01 00:00:00"
+    expires_at: "2005-12-02 00:00:00"
+    token: job_expired
+    email: job@example.com

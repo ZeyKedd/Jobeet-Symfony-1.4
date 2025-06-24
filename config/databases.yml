@@ -1,0 +1,18 @@
+dev:
+  doctrine:
+    class: sfDoctrineDatabase
+
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'pgsql:host=localhost;dbname=jobeet'
+      username: postgres
+      password: '123'
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'pgsql:host=localhost;dbname=jobeet_test'
+      username: postgres
+      password: '123'

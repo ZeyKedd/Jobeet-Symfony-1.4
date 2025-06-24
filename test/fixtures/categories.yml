@@ -1,0 +1,28 @@
+JobeetCategory:
+  design:
+    Translation:
+      en:
+        name: Design
+      fr:
+        name: Design
+
+  programming:
+    Translation:
+      en:
+        name: Programming
+      fr:
+        name: Programmation
+
+  manager:
+    Translation:
+      en:
+        name: Manager
+      fr:
+        name: Manager
+  
+  administrador:
+    Translation:
+      en:
+        name: Administrador
+      fr:
+        name: Administrateur
