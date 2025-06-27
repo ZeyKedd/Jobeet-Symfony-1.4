@@ -8,7 +8,7 @@
 abstract class PluginJobeetCategoryTable extends Doctrine_Table
 {
   
-  public function getWithJobs()
+  public function getWithJobs() 
   {
     $q = $this->createQuery('c')
       ->leftJoin('c.JobeetJobs j')

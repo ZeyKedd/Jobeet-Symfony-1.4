@@ -11,6 +11,7 @@
 class sfJobeetAffiliateActions extends sfActions
 {
 
+
   public function executeNew(sfWebRequest $request)
   {
     $this->form = new JobeetAffiliateForm();
@@ -37,4 +38,28 @@ class sfJobeetAffiliateActions extends sfActions
     }
   }
   public function executeWait(sfWebRequest $request){}
+
+  public function executeLogin(sfWebRequest $request)
+  {
+    $this->form = new JobeetAffiliateLoginForm();
+
+    if ($request->isMethod(sfRequest::POST)) {
+        $this->form->bind($request->getParameter($this->form->getName()));
+
+        if ($this->form->isValid()) {
+            return $this->processLoginForm($request, $this->form);
+        }
+    }
+  }
+
+  public function processLoginForm(sfWebRequest $request, sfForm $form)
+  {
+      $this->redirect($this->generateUrl('api_jobs', array(
+        'token' => $form->getValue('token'),
+        'sf_format' => $form->getValue('format', 'json'), 
+      )));
+  }
+
+  
+
 }

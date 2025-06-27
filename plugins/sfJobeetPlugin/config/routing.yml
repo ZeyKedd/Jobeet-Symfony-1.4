@@ -40,6 +40,13 @@ affiliate:
     prefix_patch: /:sf_culture/affiliate
     module: sfJobeetAffiliate
 
+affiliate_login:
+  url: /:sf_culture/affiliate/login
+  param: { module: sfJobeetAffiliate, action: login }
+  requirements:
+    sf_culture: (?:fr|en)
+
+
 api_jobs:
   url: /:sf_culture/api/:token/jobs.:sf_format
   class: sfDoctrineRoute

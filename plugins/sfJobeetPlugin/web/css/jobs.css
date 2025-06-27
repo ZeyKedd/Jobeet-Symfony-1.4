@@ -141,18 +141,3 @@
 {
   vertical-align: -2px;
 }
-
-/* Estilos para trabajos recientes */
-.job_history li{
-  text-align: center;
-  display: contents;
-}
-.job_history li::before
-{
-  color: #104961;
-  content: '|';
-}
-
-.job_history a{
-  text-decoration: none;
-}

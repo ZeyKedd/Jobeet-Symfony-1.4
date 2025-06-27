@@ -211,7 +211,7 @@ $browser ->
     restart()->
 
     info('4.1 - When the user acces a job, it is added to its history')->
-    get('/en/')->
+    get('en/')->
     click('Web Developer', array(), array('position' => 1))->
     get('en/')->
     with('user')->begin()->
@@ -273,4 +273,4 @@ $browser->
 
     get('/fr/')->
     with('view_cache')->isCached(true, false)->
-    with('response')->checkElement('.category_programming .more_jobs', '/15/');
+    with('response')->checkElement('.category_programming .more_jobs', '/16/');

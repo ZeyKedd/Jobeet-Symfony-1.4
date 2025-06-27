@@ -9,7 +9,7 @@ JobeetCategory:
         Sluggable: {fields: [name], uniqueBy: [lang, name]}
   columns:
     name: { type: string(255), notnull: true}
-  
+
 JobeetJob:
   actAs: { Timestampable: ~ }
   columns:

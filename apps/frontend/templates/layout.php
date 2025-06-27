@@ -24,7 +24,6 @@
 
         <div id="sub_header">
           <div class="post">
-            <h2>Ask for people</h2>
             <div>
               <a href="<?php echo url_for('@job_new') ?>">Post a Job</a>
             </div>
@@ -87,18 +86,17 @@
           </a>
         </span>
         <ul>
-          <li>test
+          <li>
             <a href=""> <?php echo __('About Jobeet') ?></a>
           </li>
           <li class="feed">
-            <?php echo link_to( __('Full Feed'), 'job', array('sf_format' => 'atom')) ?>
+            <?php echo link_to(__('Full Feed'), 'job', array('sf_format' => 'atom')) ?>
           </li>
           <li>
-            <a href=""><?php echo __('Jobeet API') ?></a>
+            <a href=""><?php echo link_to(__('Jobeet API'), 'affiliate_login') ?></a>
           </li>
-
           <li class="last">
-            <?php echo link_to( __('Become an affiliate'), 'affiliate_new') ?>
+            <?php echo link_to(__('Become an affiliate'), 'affiliate_new') ?>
           </li>
         </ul>
         <?php include_component('sfJobeetLanguage', 'language') ?>
@@ -108,3 +106,29 @@
 </body>
 
 </html>
+
+<style>
+  .job_history ul
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 760px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.job_history li{
+  text-align: center;
+  display: contents;
+}
+.job_history li::before
+{
+  color: #104961;
+  content: '|';
+}
+
+.job_history a{
+  text-decoration: none;
+}
+</style>

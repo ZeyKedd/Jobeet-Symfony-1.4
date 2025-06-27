@@ -24,8 +24,9 @@ test:
 
 all:
   .settings:
+    i18n: false
+    standard_helpers: [I18N, Partial, Cache]
     enabled_modules: [default, sfGuardAuth, sfGuardUser]
-
     # Form security secret (CSRF protection)
     csrf_secret:            b84be5a154106e270bfe1444694c1648d5c24f9e
 
@@ -40,3 +41,4 @@ all:
     login_action:           signin
     secure_module:          sfGuardAuth
     secure_action:          secure
+     

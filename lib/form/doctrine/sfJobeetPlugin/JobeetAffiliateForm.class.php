@@ -12,5 +12,6 @@ class JobeetAffiliateForm extends PluginJobeetAffiliateForm
 {
   public function configure()
   {
+    parent::configure();
   }
 }

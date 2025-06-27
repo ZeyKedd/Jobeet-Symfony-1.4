@@ -24,6 +24,7 @@ class sfJobeetJobActions extends sfActions
 
       $this->redirect('localized_homepage');
     }
+    //Consulta las categorias con trabajos activos
     $this->categories = Doctrine_Core::getTable('JobeetCategory')->getWithJobs();
   }
 
@@ -52,12 +53,26 @@ class sfJobeetJobActions extends sfActions
   }
 
   //usuario manda formulario lleno de crear trabajo
-
+  
   public function executeCreate(sfWebRequest $request)
   {
     $this->form = new JobeetJobForm();
     $this->processForm($request, $this->form);
     $this->setTemplate('new');
+  }
+  
+  // Verifica que los datos metidos en new y pasados a create sean validos para guardar
+  protected function processForm(sfWebRequest $request, sfForm $form)
+  {
+    $form->bind(
+      $request->getParameter($form->getName()),
+      $request->getFiles($form->getName())
+    );
+
+    if ($form->isValid()) {
+      $job = $form->save();
+      $this->redirect($this->generateUrl('job_show', $job));
+    }
   }
 
   public function executeEdit(sfWebRequest $request)
@@ -86,19 +101,6 @@ class sfJobeetJobActions extends sfActions
     $this->redirect('sfJobeetJob/index');
   }
 
-  // Verifica que los datos metidos en new y pasados a create sean validos para guardar
-  protected function processForm(sfWebRequest $request, sfForm $form)
-  {
-    $form->bind(
-      $request->getParameter($form->getName()),
-      $request->getFiles($form->getName())
-    );
-
-    if ($form->isValid()) {
-      $job = $form->save();
-      $this->redirect($this->generateUrl('job_show', $job));
-    }
-  }
 
   public function executePublish(sfWebRequest $request)
   {

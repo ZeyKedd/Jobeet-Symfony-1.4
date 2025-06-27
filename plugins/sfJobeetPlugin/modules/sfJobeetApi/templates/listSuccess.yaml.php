@@ -1,6 +1,5 @@
 <!-- apps/frontend/modules/api/templates/listSuccess.yaml.php -->
 <?php foreach ($jobs as $url => $job): ?>
--
   url: <?php echo $url ?>
  
 <?php foreach ($job as $key => $value): ?>
