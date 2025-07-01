@@ -45,7 +45,6 @@ all:
      - sfJobeetApi
 
 
-
     standard_helpers: [Partial, Cache, I18N]
     default_culture: it_IT
     # Form security secret (CSRF protection)
@@ -58,8 +57,4 @@ all:
     # Enable the database manager
     use_database:           true
 
-    error_404_module:     default
-    error_404_action:     error404
-    error_500_module:     default
-    error_500_action:     error500
   

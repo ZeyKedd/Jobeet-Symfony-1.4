@@ -85,45 +85,6 @@ php symfony help doctrine:build
 php symfony plugin:install sfDoctrineGuardPlugin
 //Instala sfDoctrineGuardPlugin para garantizar acceso al backend
 
-Homepage: 
-- Post a job. (layout) 
-
-- Formulario del trabajo 
-
-- Preview del trabajo 
-
-- Barra Admin (Token) 
-			- Edit 
-
-- Publicar 
-
-- Delete 
-
-- La barra de búsqueda. (layout) 
-
-- Trabajos Recién vistos. (layout) 
-
-- Las categorías 
-
-- 4 trabajos listados por categoría en homepage 
-
--Feed (?) 
-
-- Ver los demás trabajos de la categoría (And # more) 
-
-- El resto de los trabajos, 10 por paginas 
-
-- Un paginado 
-
-- Trabajos total en la categoría 
-
-- Footer (Layout) 
-
--Afíliate 
-
-- Formulario de afiliado 
-
- -Cambio de lenguaje 
 //Crear un super usuario
 
 ===================================================================w=============

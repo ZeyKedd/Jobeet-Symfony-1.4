@@ -9,6 +9,7 @@ generator:
     plural:                ~
     route_prefix:          jobeet_category
     with_doctrine_route:   true
+    skip_i18n:          true
     # actions_base_class:    sfActions
 
     config:

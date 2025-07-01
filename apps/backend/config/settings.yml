@@ -24,7 +24,6 @@ test:
 
 all:
   .settings:
-    i18n: false
     standard_helpers: [I18N, Partial, Cache]
     enabled_modules: [default, sfGuardAuth, sfGuardUser]
     # Form security secret (CSRF protection)
@@ -35,7 +34,7 @@ all:
     escaping_method:        ESC_SPECIALCHARS
 
     # Enable the database manager
-    use_database:           true
+    use_database:           true  
   .actions:
     login_module:           sfGuardAuth
     login_action:           signin

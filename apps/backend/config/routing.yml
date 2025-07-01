@@ -71,6 +71,8 @@ sf_guard_user:
     module:               sfGuardUser
     prefix_path:          /guard/users
     with_wildcard_routes: true
+  param:
+    skip_i18n: true
   
 
 # You can find more information about this file on the symfony website:
@@ -81,12 +83,3 @@ homepage:
   url:   /
   param: { module: backend_job, action: index }
 
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
-
-
-default:
-  url:   /:module/:action/*

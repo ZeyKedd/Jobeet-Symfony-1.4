@@ -27,7 +27,8 @@ test:
 dev:
   mailer:
     param:
-      delivery_strategy: none
+      delivery_strategy: single_address
+      delivery_address: sebhrz08@gmail.com
 
 all:
   routing:
