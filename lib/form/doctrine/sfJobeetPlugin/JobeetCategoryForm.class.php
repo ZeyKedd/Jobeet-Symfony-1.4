@@ -12,5 +12,6 @@ class JobeetCategoryForm extends PluginJobeetCategoryForm
 {
   public function configure()
   {
+    parent::configure();
   }
 }

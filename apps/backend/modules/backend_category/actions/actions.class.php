@@ -13,4 +13,5 @@ require_once dirname(__FILE__).'/../lib/backend_categoryGeneratorHelper.class.ph
  */
 class backend_categoryActions extends autoBackend_categoryActions
 {
+
 }

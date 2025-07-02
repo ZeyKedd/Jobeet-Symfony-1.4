@@ -40,6 +40,7 @@ affiliate:
     prefix_patch: /:sf_culture/affiliate
     module: sfJobeetAffiliate
 
+
 affiliate_login:
   url: /:sf_culture/affiliate/login
   param: { module: sfJobeetAffiliate, action: login }
@@ -62,6 +63,7 @@ category:
   options: { model: JobeetCategory, type: object, method: doSelectForSlug }
   requirements:
     sf_format: (?:html|atom)
+    sf_culture: (?:fr|en)
 
 localized_homepage:
   url: /:sf_culture/

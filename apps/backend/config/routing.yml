@@ -1,29 +1,29 @@
-jobeet_job_backend_category:
-  class: sfDoctrineRouteCollection
-  options:
-    model:                JobeetJob
-    module:               backend_category
-    prefix_path:          /backend_category
-    column:               id
-    with_wildcard_routes: true
+# jobeet_job_backend_category:
+#   class: sfDoctrineRouteCollection
+#   options:
+#     model:                JobeetJob
+#     module:               backend_category
+#     prefix_path:          /backend_category
+#     column:               id
+#     with_wildcard_routes: true
 
-jobeet_affiliate_backend_job:
-  class: sfDoctrineRouteCollection
-  options:
-    model:                JobeetJob
-    module:               backend_job
-    prefix_path:          /backend_job
-    column:               id
-    with_wildcard_routes: true
+# jobeet_affiliate_backend_job:
+#   class: sfDoctrineRouteCollection
+#   options:
+#     model:                JobeetJob
+#     module:               backend_job
+#     prefix_path:          /backend_job
+#     column:               id
+#     with_wildcard_routes: true
 
-jobeet_affiliate_backend_category:
-  class: sfDoctrineRouteCollection
-  options:
-    model:                JobeetAffiliate
-    module:               backend_category
-    prefix_path:          /backend_category
-    column:               id
-    with_wildcard_routes: true
+# jobeet_affiliate_backend_category:
+#   class: sfDoctrineRouteCollection
+#   options:
+#     model:                JobeetAffiliate
+#     module:               backend_category
+#     prefix_path:          /backend_category
+#     column:               id
+#     with_wildcard_routes: true
 
 jobeet_affiliate:
   class: sfDoctrineRouteCollection
@@ -53,7 +53,7 @@ jobeet_job:
     with_wildcard_routes: true
 
 sf_guard_signin:
-  url: /login
+  url: /backend/login
   param: {module: sfGuardAuth, action: signin}
 
 sf_guard_signout:
@@ -69,7 +69,7 @@ sf_guard_user:
   options:
     model:                sfGuardUser
     module:               sfGuardUser
-    prefix_path:          /guard/users
+    prefix_path:          /backend/users
     with_wildcard_routes: true
   param:
     skip_i18n: true

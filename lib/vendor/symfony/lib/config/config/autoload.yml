@@ -22,3 +22,5 @@ autoload:
     path:           %SF_APP_DIR%/modules/*/lib
     prefix:         1
     recursive:      true
+
+

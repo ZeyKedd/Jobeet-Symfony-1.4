@@ -13,7 +13,7 @@
 <div style="width: 400px; margin: 0 auto;">
     <form action="<?php echo url_for('affiliate_login') ?>" method="post">
         <table>
-            <p>Remember copy your token API withot spaces</p>
+            <p>Remember copy your token API without spaces</p>
             <?php echo $form ?>
             <tr>
                 <td colspan="2">
