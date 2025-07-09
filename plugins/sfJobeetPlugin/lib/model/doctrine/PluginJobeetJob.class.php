@@ -153,4 +153,5 @@ abstract class PluginJobeetJob extends BaseJobeetJob
 
     return parent::delete($conn);
   }
+
 }

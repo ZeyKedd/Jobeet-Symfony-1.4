@@ -9,6 +9,7 @@ all:
       dsn: 'pgsql:host=localhost;dbname=jobeet'
       username: postgres
       password: '123'
+      
 test:
   doctrine:
     class: sfDoctrineDatabase

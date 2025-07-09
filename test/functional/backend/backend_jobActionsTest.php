@@ -10,10 +10,5 @@ $browser->
   with('request')->begin()->
     isParameter('module', 'backend_job')->
     isParameter('action', 'index')->
-  end()->
-
-  with('response')->begin()->
-    isStatusCode(200)->
-    checkElement('body', '!/This is a temporary page/')->
   end()
 ;

@@ -19,13 +19,13 @@
       </h1>
     </div>
 
-    <?php if (!$sf_user->isAuthenticated()): ?>
+    <!-- <?php #if (!$sf_user->isAuthenticated()): ?>
       <div id="menu">
         <ul>
-          <li><?php echo link_to('Login', 'sf_guard_signin') ?></li>
+          <li><?php #echo link_to('Login', 'sf_guard_signin') ?></li>
         </ul>
       </div>
-    <?php else : ?>
+    <?php #else : ?> -->
       <div id="menu">
         <ul>
           <li><?php echo link_to('Jobs', 'jobeet_job') ?></li>
@@ -39,11 +39,11 @@
           <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li>
         </ul>
       </div>
-      
-      <?php endif ?>
-    <div id="content">
-      <?php echo $sf_content ?>
-    </div>
+
+      <div id="content">
+        <?php echo $sf_content ?>
+      </div>
+    <?php #endif ?>
 
     <div id="footer">
       <img src="/legacy/images/jobeet-mini.png" />

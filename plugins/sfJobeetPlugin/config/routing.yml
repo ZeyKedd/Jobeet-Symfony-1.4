@@ -29,6 +29,16 @@ job_show_user:
   param: { module: sfJobeetJob, action: show }
   requirements:
     id: \d+
+    sf_method: [GET]job_show_user:
+  url: /:sf_culture/job/:company_slug/:location_slug/:id/:position_slug
+  class: sfDoctrineRoute
+  options:
+    model: JobeetJob
+    type: object
+    method_for_query: retrieveActiveJob
+  param: { module: sfJobeetJob, action: show }
+  requirements:
+    id: \d+
     sf_method: [GET]
 
 affiliate:

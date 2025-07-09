@@ -2,7 +2,7 @@
 
 <!-- Quitar al hacer test  -->
 
-  <!-- <tr class="even">
+  <tr class="even">
     <td class="location" style="text-align: center;">
       Location
     </td>
@@ -12,7 +12,7 @@
     <td class="location" style="text-align: center;">
       Company
     </td>
-  </tr> -->
+  </tr>
 
   <?php foreach ($jobs as $i => $job): ?>
     <tr class="<?php echo fmod($i, 2) ? 'even' : 'odd' ?>">

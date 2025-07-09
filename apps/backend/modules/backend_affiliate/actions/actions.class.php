@@ -1,7 +1,7 @@
 <?php
 
-require_once dirname(__FILE__).'/../lib/backend_affiliateGeneratorConfiguration.class.php';
-require_once dirname(__FILE__).'/../lib/backend_affiliateGeneratorHelper.class.php';
+require_once dirname(__FILE__) . '/../lib/backend_affiliateGeneratorConfiguration.class.php';
+require_once dirname(__FILE__) . '/../lib/backend_affiliateGeneratorHelper.class.php';
 
 /**
  * backend_affiliate actions.
@@ -13,7 +13,7 @@ require_once dirname(__FILE__).'/../lib/backend_affiliateGeneratorHelper.class.p
  */
 class backend_affiliateActions extends autoBackend_affiliateActions
 {
-        public function executeListActivate()
+    public function executeListActivate()
     {
         $this->getRoute()->getObject()->activate();
         $this->redirect('jobeet_affiliate');

@@ -58,7 +58,7 @@ class sfJobeetJobActions extends sfActions
   {
     $this->form = new JobeetJobForm();
     $this->processForm($request, $this->form);
-    $this->setTemplate('new');
+    $this->setTemplate('new'); //Muestra la vista newSuccess
   }
   
   // Verifica que los datos metidos en new y pasados a create sean validos para guardar

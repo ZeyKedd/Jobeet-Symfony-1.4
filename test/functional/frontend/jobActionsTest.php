@@ -209,7 +209,6 @@ $browser ->
 
     loadData()->
     restart()->
-
     info('4.1 - When the user acces a job, it is added to its history')->
     get('en/')->
     click('Web Developer', array(), array('position' => 1))->
